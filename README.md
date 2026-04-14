@@ -37,7 +37,7 @@ cd system-monitoring-dashboard
 docker compose up -d
 ```
 ### Setup in Grafana:
-
+```bash 
 Open http://localhost:3000 (default: admin / admin)
 Add Prometheus data source → URL: http://prometheus:9090
 Import dashboard → Upload dashboard.json
@@ -62,12 +62,14 @@ system-monitoring-dashboard/
  
 ### Future Improvements (Roadmap)
 
-Built-in alerting rules (CPU > 80% → Slack/email)
-Disk I/O + detailed Network panels
-Multi-node / Docker container monitoring
-Loki + Promtail for logs (full observability stack)
-Detailed setup guides for production
+* Built-in alerting rules (CPU > 80% → Slack/email)
+* Disk I/O + detailed Network panels
+* Multi-node / Docker container monitoring
+* Loki + Promtail for logs (full observability stack)
+* Detailed setup guides for production
 
 ### Contributing
-PRs welcome! Open an issue first for major changes. See CONTRIBUTING.md.
-Made with ❤️ by Aksa Susan Abraham
+* PRs welcome! Open an issue first for major changes. See `CONTRIBUTING.md` .
+
+
+
