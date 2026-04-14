@@ -1,44 +1,68 @@
 # System Performance Monitoring Dashboard
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![Grafana](https://img.shields.io/badge/Grafana-FF4D4F?logo=grafana&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Grafana](https://img.shields.io/badge/Grafana-%23FF4D4F.svg?logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C.svg?logo=prometheus&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED.svg?logo=docker&logoColor=white)
 
-**One-command, production-ready system monitoring dashboard that actually looks beautiful.**
+**A clean, production-ready, one-command system monitoring stack with beautiful Grafana dashboards.**
 
-Built for:
-- DevOps beginners who want to learn Grafana properly
-- Developers & small teams who need real monitoring in < 5 minutes
-- Companies looking for a clean, self-hosted observability starter
+Built for DevOps learners, developers, and small teams who want real monitoring without complexity.
 
-### Why this repo stands out
-- Full working stack (not just a JSON file)
-- Modern Grafana dashboard with clean thresholds, legends & time-series
-- Zero-config docker-compose (just `docker compose up -d`)
-- Ready for production (add alerts, scale, cloud in 2 minutes)
-
-### Live Demo (add after you deploy)
-→ [Live Dashboard](your-link-here)  *(deploy on Railway / Render / AWS free tier and put link here)*
-
-### Dashboard Preview
-*(Add 3-4 high-quality screenshots here – see Step 5)*
+### Why This Repo?
+- Fully working out-of-the-box (not just a dashboard JSON)
+- Modern, professional Grafana panels with proper thresholds and dark theme
+- Zero-config Prometheus + Node Exporter setup
+- Easy to extend with alerts, more metrics, or multi-node
+- Solves the common pain: "I want to learn Grafana properly but everything is broken or ugly"
 
 ### Features
-- Real-time CPU & Memory usage with color-coded thresholds
-- Smooth Grafana time-series panels (dark theme, professional look)
-- Fully containerized (Prometheus + Node Exporter + Grafana)
-- Exportable & importable dashboard.json
-- Easy to extend (disk, network, alerts coming soon)
+- Real-time CPU, Memory, Disk, Load, and Network metrics
+- Color-coded thresholds (green/yellow/red) for quick insights
+- Smooth time-series visualizations
+- Fully containerized with Docker Compose
+- Clean, exportable `dashboard.json`
 
-### Tech Stack (Grafana-native)
-- Grafana (latest)
-- Prometheus
-- Node Exporter
-- Docker + Docker Compose
+### Tech Stack
+- **Grafana** (latest) — Beautiful dashboards
+- **Prometheus** — Metrics collection
+- **Node Exporter** — Host system metrics
+- **Docker + Docker Compose** — One-command deployment
 
-### One-Command Setup
+### Quick Start (Local)
+
 ```bash
 git clone https://github.com/Githubdiaries/system-monitoring-dashboard.git
 cd system-monitoring-dashboard
 docker compose up -d
+```
+### Setup in Grafana:
+
+Open http://localhost:3000 (default: admin / admin)
+Add Prometheus data source → URL: http://prometheus:9090
+Import dashboard → Upload dashboard.json
+Done — production-grade monitoring ready.
+
+### Project Structure
+
+
+system-monitoring-dashboard/
+├── docker-compose.yml          # Everything in one file
+├── prometheus.yml              # Ready scrape config
+├── dashboard.json              # Professional Grafana dashboard
+├── screenshots/                # Visual proof
+├── README.md
+└── LICENSE
+
+
+### Future Improvements (Roadmap)
+
+Built-in alerting rules (CPU > 80% → Slack/email)
+Disk I/O + detailed Network panels
+Multi-node / Docker container monitoring
+Loki + Promtail for logs (full observability stack)
+Detailed setup guides for production
+
+### Contributing
+PRs welcome! Open an issue first for major changes. See CONTRIBUTING.md.
+Made with ❤️ by Aksa Susan Abraham
