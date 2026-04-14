@@ -1,106 +1,44 @@
-# 📊 System Performance Monitoring Dashboard
+# System Performance Monitoring Dashboard
 
-A real-time system monitoring dashboard built using **Prometheus** and **Grafana**, visualizing key performance metrics like CPU and Memory usage.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Grafana](https://img.shields.io/badge/Grafana-FF4D4F?logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
----
+**One-command, production-ready system monitoring dashboard that actually looks beautiful.**
 
-## 🚀 Features
+Built for:
+- DevOps beginners who want to learn Grafana properly
+- Developers & small teams who need real monitoring in < 5 minutes
+- Companies looking for a clean, self-hosted observability starter
 
-* 📈 Real-time **CPU Usage (%)**
-* 🧠 Real-time **Memory Usage (%)**
-* ⚡ Smooth time-series visualization
-* 🔍 Powered by Prometheus metrics scraping
-* 🎯 Clean and minimal Grafana dashboard design
+### Why this repo stands out
+- Full working stack (not just a JSON file)
+- Modern Grafana dashboard with clean thresholds, legends & time-series
+- Zero-config docker-compose (just `docker compose up -d`)
+- Ready for production (add alerts, scale, cloud in 2 minutes)
 
----
+### Live Demo (add after you deploy)
+→ [Live Dashboard](your-link-here)  *(deploy on Railway / Render / AWS free tier and put link here)*
 
-## 🛠️ Tech Stack
+### Dashboard Preview
+*(Add 3-4 high-quality screenshots here – see Step 5)*
 
-* **Grafana** – Visualization & dashboards
-* **Prometheus** – Metrics collection & monitoring
-* **Node Exporter** – System-level metrics
-* **Docker** – Containerized setup
+### Features
+- Real-time CPU & Memory usage with color-coded thresholds
+- Smooth Grafana time-series panels (dark theme, professional look)
+- Fully containerized (Prometheus + Node Exporter + Grafana)
+- Exportable & importable dashboard.json
+- Easy to extend (disk, network, alerts coming soon)
 
----
+### Tech Stack (Grafana-native)
+- Grafana (latest)
+- Prometheus
+- Node Exporter
+- Docker + Docker Compose
 
-## 📂 Project Structure
-
-```
-system-monitoring-dashboard/
-│
-├── dashboard.json       # Exported Grafana dashboard
-├── README.md            # Project documentation
-```
-
----
-
-## ⚙️ Setup Instructions
-
-### 1. Run Prometheus
-
+### One-Command Setup
 ```bash
-docker run -d -p 9090:9090 --name prometheus prom/prometheus
-```
-
----
-
-### 2. Run Node Exporter
-
-```bash
-docker run -d -p 9100:9100 prom/node-exporter
-```
-
----
-
-### 3. Run Grafana
-
-```bash
-docker run -d -p 3000:3000 --name grafana grafana/grafana
-```
-
----
-
-### 4. Configure Grafana
-
-* Open: http://localhost:3000
-* Add Prometheus as data source
-* Import `dashboard.json`
-
----
-
-## 📊 Dashboard Preview
-
-Displays:
-
-* CPU Usage (%)
-* Memory Usage (%)
-
----
-
-## 🎯 Learning Outcome
-
-* Hands-on with **monitoring systems**
-* Understanding of **Prometheus metrics**
-* Experience with **Grafana dashboards**
-* Basic **DevOps workflow using Docker**
-
----
-
-## 📌 Future Improvements
-
-* Add Disk usage monitoring
-* Add Alerts (CPU threshold, Memory spikes)
-* Deploy on cloud (AWS / GCP)
-* Add authentication & sharing
-
----
-
-## 👩‍💻 Author
-
-**Aksa Susan Abraham**
-
----
-
-## ⭐ If you like this project
-
-Do give it a ⭐
+git clone https://github.com/Githubdiaries/system-monitoring-dashboard.git
+cd system-monitoring-dashboard
+docker compose up -d
