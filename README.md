@@ -43,10 +43,10 @@ Add Prometheus data source → URL: http://prometheus:9090
 Import dashboard → Upload dashboard.json
 Done — production-grade monitoring ready.
 
-### Project Structure
 
+```
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 ```bash
 system-monitoring-dashboard/
