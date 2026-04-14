@@ -46,6 +46,9 @@ Done — production-grade monitoring ready.
 ### Project Structure
 
 
+## 📁 Project Structure
+
+```bash
 system-monitoring-dashboard/
 ├── docker-compose.yml          # Everything in one file
 ├── prometheus.yml              # Ready scrape config
@@ -53,8 +56,10 @@ system-monitoring-dashboard/
 ├── screenshots/                # Visual proof
 ├── README.md
 └── LICENSE
+```
 
 
+ 
 ### Future Improvements (Roadmap)
 
 Built-in alerting rules (CPU > 80% → Slack/email)
