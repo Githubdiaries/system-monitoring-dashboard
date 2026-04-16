@@ -57,7 +57,9 @@ system-monitoring-dashboard/
 ├── README.md
 └── LICENSE
 ```
+### Proof of Work
 
+<img width="1459" height="779" alt="Screenshot 2026-04-14 181108" src="https://github.com/user-attachments/assets/5d783190-bd04-4ea0-bde7-1a9eb86f0ac8" />
 
  
 ### Future Improvements (Roadmap)
