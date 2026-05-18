@@ -5,16 +5,17 @@
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C.svg?logo=prometheus&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED.svg?logo=docker&logoColor=white)
 
-**A clean, production-ready, one-command system monitoring stack with beautiful Grafana dashboards.**
+**A clean, one-command system monitoring stack with beautiful Grafana dashboards.**
 
 Built for DevOps learners, developers, and small teams who want real monitoring without complexity.
 
 ### Why This Repo?
+- Solves the common pain: "I want to learn Grafana properly but everything is broken or ugly"
 - Fully working out-of-the-box (not just a dashboard JSON)
 - Modern, professional Grafana panels with proper thresholds and dark theme
 - Zero-config Prometheus + Node Exporter setup
 - Easy to extend with alerts, more metrics, or multi-node
-- Solves the common pain: "I want to learn Grafana properly but everything is broken or ugly"
+
 
 ### Features
 - Real-time CPU, Memory, Disk, Load, and Network metrics
